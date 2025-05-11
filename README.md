@@ -1,4 +1,6 @@
-# 🎨 Canvas Design Tool
+[Live Website](https://ncanva.netlify.app/)
+
+# Canvas Design Tool
 
 A lightweight web-based design tool featuring a canvas, shape tools, and an intuitive sidebar panel.
 
@@ -11,13 +13,13 @@ A lightweight web-based design tool featuring a canvas, shape tools, and an intu
 
 - **Shape Panel**
 
-  - Displays icons (using MUI) to select shapes
+  - Displays icons to select shapes
   - Click to trigger drawing mode on canvas
 
 - **Reusable Components**
   - Sidebar, RevealPanel, DropdownContent components
 
-## 🚧 Features Planned / In Progress
+## Features Planned / In Progress
 
 - **Responsive Layout**
 
