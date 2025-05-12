@@ -26,10 +26,13 @@ function RevealPanel({
     };
   }, []);
   return (
-    <div className={`group ${classes} ${active && 'active'}`} ref={panelRef}>
+    <div
+      className={` w-full group ${classes} ${active && 'active'}`}
+      ref={panelRef}
+    >
       <button
         className={`
-      cursor-pointer
+      cursor-pointer w-full 
       flex flex-col gap-y-1 rounded-lg text-gray-700 group-[.active]:border-gray-300  group-[.active]:border-2 p-1 ${btnClasses}`}
       >
         {btnIcon && <i>{btnIcon}</i>}

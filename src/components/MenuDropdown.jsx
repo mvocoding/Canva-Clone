@@ -17,8 +17,8 @@ function DropdownButton({ text, icon, classes, handleOnclick }) {
 function DropdownContent({ children }) {
   return (
     <div
-      className={`
-        absolute top-full left-2 w-80  bg-white rounded-lg shadow-xl z-50 
+      className={`content 
+        absolute top-full left-2 w-80  bg-white rounded-lg shadow-xl z-[1000] 
         py-2 px-4 space-y-4 opacity-0 max-h-0 overflow-hidden 
         transition-all duration-300 ease-in-out group-[.active]:opacity-100 
         group-[.active]:max-h-[500px] group-[.active]:visible 

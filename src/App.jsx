@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Design from './components/Design';
 import LoadingBar from './components/LoadingBar';
+import useAppStore from './store/useAppStore';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const { isLoading, setIsLoading } = useAppStore();
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsLoading(false);
@@ -11,7 +12,7 @@ function App() {
     return () => {
       clearTimeout(timeout);
     };
-  }, []);
+  }, [setIsLoading]);
   return (
     <>
       <LoadingBar isActive={isLoading}></LoadingBar>

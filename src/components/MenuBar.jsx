@@ -2,6 +2,7 @@ import IosShareIcon from '@mui/icons-material/IosShare';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import MenuDropdown from './MenuDropdown';
 import FileMenu from './FileMenu';
+import ShareMenu from './ShareMenu';
 
 const menudropdowns = [
   {
@@ -9,15 +10,10 @@ const menudropdowns = [
     content: <FileMenu></FileMenu>,
   },
   {
-    text: 'Resize',
-    icon: <WorkspacePremiumIcon></WorkspacePremiumIcon>,
-    content: <FileMenu></FileMenu>,
-  },
-  {
     text: 'Share',
     icon: <IosShareIcon></IosShareIcon>,
-    content: <FileMenu></FileMenu>,
-    classes: 'ml-auto',
+    content: <ShareMenu></ShareMenu>,
+    classes: 'ml-auto [&_.content]:left-[unset] [&_.content]:right-0',
     btnClasses: 'bg-white/90 !text-black px-4 py-2',
   },
 ];
